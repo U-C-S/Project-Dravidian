@@ -1,0 +1,58 @@
+- SOUND - u0C4D
+0C05 - AH
+0C06 - AAH - u0C3E
+0C07 - E - u0C3F
+0C08 - EE - u0C40
+0C09 - U - u0C41
+0C0A - VU - u0C42
+0C0B - RU - u0C43
+0C60 - RUU - u0C44
+0C0E - A - u0C46
+0C0F - AA - u0C47
+0C10 - I - u0C48
+0C12 - O - u0C4A
+0C13 - OO - u0C4B
+0C14 - OW - u0C4C
+ -----------------
+0C15 - KA
+0C16 - KAA
+0C17 - GA
+0C18 - GAA
+0C19 - INI
+   ------
+0C1A - CHA
+0C1B - CHAA
+0C1C - JHA
+0C1D - JHAA
+0C1E - INYA
+   ------
+0C1F - TA
+0C20 - TAA
+0C21 - DA
+0C22 - DAA
+0C23 - ANA
+   ------
+0C24 - THA
+0C25 - THAA
+0C26 - DHA
+0C27 - DHAA
+0C28 - NA
+   ------
+0C2A - PA
+0C2B - PAA
+0C2C - BA
+0C2D - BAA
+0C2E - MA
+   ------
+0C2F - YA
+0C30 - RA
+0C31 - bRA
+0C32 - LA
+0C33 - lLA
+0C34 - 
+0C35 - VA
+0C36 - SAY
+0C37 - SHA
+0C38 - SA
+0C39 - HA
+------------------

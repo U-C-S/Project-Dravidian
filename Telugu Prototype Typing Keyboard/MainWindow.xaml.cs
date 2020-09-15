@@ -34,6 +34,10 @@ namespace Telugu_Prototype_Typing_Keyboard
             {
                 output.Text += "\u0C3F";
             }
+            else if(e.Key == Key.S)
+            {
+                output.Text += "\u0C2A\u0C4D\u0C30";
+            }
         }
     }
 }
