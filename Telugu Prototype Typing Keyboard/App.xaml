@@ -1,0 +1,9 @@
+﻿<Application x:Class="Telugu_Prototype_Typing_Keyboard.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Telugu_Prototype_Typing_Keyboard"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
