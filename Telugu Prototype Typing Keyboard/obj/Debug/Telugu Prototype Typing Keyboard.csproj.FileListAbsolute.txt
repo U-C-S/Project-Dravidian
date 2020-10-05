@@ -12,3 +12,7 @@ D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\T
 D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.csproj.CoreCompileInputs.cache
 D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.exe
 D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.pdb
+D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.csprojAssemblyReference.cache
+D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\UControls\UnicodeKeys.g.cs
+D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\UControls\UnicodeKeys.baml

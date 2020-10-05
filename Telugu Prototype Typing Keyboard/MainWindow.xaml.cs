@@ -23,6 +23,12 @@ namespace Telugu_Prototype_Typing_Keyboard
         public MainWindow()
         {
             InitializeComponent();
+            ada.Unicode = UnicodeKeys.ah;
+                
+        }
+        public static class UnicodeKeys
+        {
+            public const string ah = "\u0C05";
         }
         private void Keyboard_press(object sender, KeyEventArgs e)
         {
