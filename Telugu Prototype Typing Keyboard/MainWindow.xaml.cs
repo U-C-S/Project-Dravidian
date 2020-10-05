@@ -24,7 +24,6 @@ namespace Telugu_Prototype_Typing_Keyboard
         {
             InitializeComponent();
             ada.Unicode = UnicodeKeys.ah;
-                
         }
         public static class UnicodeKeys
         {
@@ -44,6 +43,11 @@ namespace Telugu_Prototype_Typing_Keyboard
             {
                 output.Text += "\u0C2A\u0C4D\u0C30";
             }
+        }
+        private void textbox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.T)
+                output.Text += "\u0C15";
         }
     }
 }
