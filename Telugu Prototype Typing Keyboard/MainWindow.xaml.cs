@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Telugu;
 
 namespace Telugu_Prototype_Typing_Keyboard
 {
@@ -23,11 +24,9 @@ namespace Telugu_Prototype_Typing_Keyboard
         public MainWindow()
         {
             InitializeComponent();
-            ada.Unicode = UnicodeKeys.ah;
-        }
-        public static class UnicodeKeys
-        {
-            public const string ah = "\u0C05";
+            Na.Content = TeluguKeys.ah;
+            Nka.Content = TeluguKeys.ka;
+            NSSe.Content = TeluguKeys._e;
         }
         private void Keyboard_press(object sender, KeyEventArgs e)
         {
@@ -48,6 +47,21 @@ namespace Telugu_Prototype_Typing_Keyboard
         {
             if (e.Key == Key.T)
                 output.Text += "\u0C15";
+        }
+
+        private void aa(object sender, RoutedEventArgs e)
+        {
+            output.Text += TeluguKeys.ah;
+        }
+
+        private void ka(object sender, RoutedEventArgs e)
+        {
+            output.Text += TeluguKeys.ka;
+        }
+
+        private void SSe(object sender, RoutedEventArgs e)
+        {
+            output.Text += TeluguKeys._e;
         }
     }
 }

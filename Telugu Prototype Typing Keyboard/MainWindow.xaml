@@ -4,7 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Telugu_Prototype_Typing_Keyboard"
-        xmlns:controls="clr-namespace:Telugu_Prototype_Typing_Keyboard.UControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="480" Width="800" KeyDown="Keyboard_press">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
@@ -48,7 +47,10 @@
             <Button Grid.Column="6"/>
 
         </Grid>
-        <controls:UnicodeKeys x:Name="ada"/>
+        <Button x:Name="Na" Width="50" Height="50" Click="aa" Margin="568,34,175.6,366.4"/>
+        <Button x:Name="Nka" Width="50" Height="50" Click="ka" Margin="621,93,122.6,307.4"/>
+        <Button x:Name="NSSe" Width="50" Height="50" Click="SSe" Margin="701,110,42.6,290.4"/>
+
 
     </Grid>
 </Window>
