@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("Telugu Prototype Typing Keyboard")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("UCS")]
 [assembly: AssemblyProduct("Telugu Prototype Typing Keyboard")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

@@ -1,22 +1,6 @@
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\bin\Debug\Telugu Prototype Typing Keyboard.exe.config
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\bin\Debug\Telugu Prototype Typing Keyboard.exe
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\bin\Debug\Telugu Prototype Typing Keyboard.pdb
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.csprojAssemblyReference.cache
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\MainWindow.g.cs
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\App.g.cs
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard_MarkupCompile.cache
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard_MarkupCompile.lref
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\MainWindow.baml
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.g.resources
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu_Prototype_Typing_Keyboard.Properties.Resources.resources
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.csproj.GenerateResource.cache
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.csproj.CoreCompileInputs.cache
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.exe
-D:\COde\C-Sharp\Telugu Typing Keyboard\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.pdb
-D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\bin\Debug\Telugu Prototype Typing Keyboard.exe.config
-D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\bin\Debug\Telugu Prototype Typing Keyboard.exe
-D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\bin\Debug\Telugu Prototype Typing Keyboard.pdb
-D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard.csprojAssemblyReference.cache
+D:\COde\C-Sharp\Telugu-Font-Manager\Build\Telugu Prototype Typing Keyboard.exe.config
+D:\COde\C-Sharp\Telugu-Font-Manager\Build\Telugu Prototype Typing Keyboard.exe
+D:\COde\C-Sharp\Telugu-Font-Manager\Build\Telugu Prototype Typing Keyboard.pdb
 D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\MainWindow.g.cs
 D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\App.g.cs
 D:\COde\C-Sharp\Telugu-Font-Manager\Telugu Prototype Typing Keyboard\obj\Debug\Telugu Prototype Typing Keyboard_MarkupCompile.cache

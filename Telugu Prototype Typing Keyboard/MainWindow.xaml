@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:Telugu_Prototype_Typing_Keyboard"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" KeyDown="Keyboard_press">
-    <Grid>
-        <TextBox Text="" Name="output" Height="80" Margin="0,0,0,0" Width="200"/>
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <ScrollViewer VerticalScrollBarVisibility="Disabled">
+            <TextBox Text="" Name="output" Height="120" Margin="0,0,0,250" Width="300" FontSize="14" TextWrapping="Wrap" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        </ScrollViewer>
 
     </Grid>
 </Window>
