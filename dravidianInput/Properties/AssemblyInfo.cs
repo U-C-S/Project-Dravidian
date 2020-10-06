@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Telugu Prototype Typing Keyboard")]
+[assembly: AssemblyTitle("dravidianInput")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("UCS")]
-[assembly: AssemblyProduct("Telugu Prototype Typing Keyboard")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("dravidianInput")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

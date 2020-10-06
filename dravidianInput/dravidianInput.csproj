@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60EB1243-B258-4FF9-AC79-205BFAF2D376}</ProjectGuid>
+    <ProjectGuid>{56346479-E406-4B7F-83DE-E2B453E9A834}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Telugu_Prototype_Typing_Keyboard</RootNamespace>
-    <AssemblyName>Telugu Prototype Typing Keyboard</AssemblyName>
+    <RootNamespace>dravidianInput</RootNamespace>
+    <AssemblyName>dravidianInput</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -16,14 +16,15 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Build\</OutputPath>
+    <OutputPath>..\_Release\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -95,13 +96,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Telugu\Telugu.csproj">
-      <Project>{2b84a76d-48f7-4a82-b981-7461a201db7b}</Project>
-      <Name>Telugu</Name>
+    <ProjectReference Include="..\Input.Telugu\Input.Telugu.csproj">
+      <Project>{6907f634-3085-4204-9839-820bde50167d}</Project>
+      <Name>Input.Telugu</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

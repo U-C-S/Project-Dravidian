@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Telugu Unicode Ref_library based on English Sounds")]
+[assembly: AssemblyTitle("UnicodeTelugu")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("U-C-S")]
-[assembly: AssemblyProduct("Telugu Unicode")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Input.Telugu.Properties")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4cd2d36e-c438-4387-9054-2473fd1fe3c5")]
+[assembly: Guid("a98bfc9a-8217-4f19-9157-ef292d8a59b0")]
 
 // Version information for an assembly consists of the following four values:
 //

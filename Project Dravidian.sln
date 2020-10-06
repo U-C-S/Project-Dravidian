@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dravidianInput", "dravidianInput\dravidianInput.csproj", "{56346479-E406-4B7F-83DE-E2B453E9A834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Input.Telugu", "Input.Telugu\Input.Telugu.csproj", "{6907F634-3085-4204-9839-820BDE50167D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56346479-E406-4B7F-83DE-E2B453E9A834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56346479-E406-4B7F-83DE-E2B453E9A834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56346479-E406-4B7F-83DE-E2B453E9A834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56346479-E406-4B7F-83DE-E2B453E9A834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6907F634-3085-4204-9839-820BDE50167D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6907F634-3085-4204-9839-820BDE50167D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6907F634-3085-4204-9839-820BDE50167D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6907F634-3085-4204-9839-820BDE50167D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {270B1071-7C75-4935-96EC-ADCAFB88D7E5}
+	EndGlobalSection
+EndGlobal
