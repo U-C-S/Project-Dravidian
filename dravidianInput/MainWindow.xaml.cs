@@ -62,5 +62,17 @@ namespace dravidianInput
         {
             output.Text += Input.Telugu.Unicode._e;
         }
+
+        private void TextboxFontChange(object sender, SelectionChangedEventArgs e)
+        {
+            if (TextFontCombox.SelectedIndex == 0)
+                output.FontFamily = new FontFamily("Segoe UI");
+            if (TextFontCombox.SelectedIndex == 1)
+                output.FontFamily = new FontFamily("Gautami");
+            if (TextFontCombox.SelectedIndex == 2)
+                output.FontFamily = new FontFamily("NTR");
+            if (TextFontCombox.SelectedIndex == 3)
+                output.FontFamily = new FontFamily("Vani");
+        }
     }
 }

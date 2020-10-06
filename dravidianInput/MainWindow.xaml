@@ -8,10 +8,16 @@
         Title="MainWindow" Height="480" Width="750">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
         <ScrollViewer VerticalScrollBarVisibility="Disabled">
-            <TextBox Text="a" Name="output" FontFamily="NTR" Height="120" Margin="0,20,0,0" Width="400" FontSize="16" TextWrapping="Wrap" 
+            <TextBox Text="a" Name="output" Height="120" Margin="0,20,0,0" Width="400" FontSize="18" TextWrapping="Wrap" 
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" 
                      KeyDown="textbox1_KeyDown" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         </ScrollViewer>
+        <ComboBox x:Name="TextFontCombox" Margin="20,20,0,0" Width="75" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="TextboxFontChange" SelectedIndex="0">
+            <ComboBoxItem Content="Default"/>
+            <ComboBoxItem Content="Gautami"/>
+            <ComboBoxItem Content="NTR"/>
+            <ComboBoxItem Content="Vani"/>
+        </ComboBox>
 
         <Grid Width="640" Height="270" VerticalAlignment="Bottom" HorizontalAlignment="Center">
             <Grid.RowDefinitions>
@@ -52,5 +58,6 @@
         <Button x:Name="Na" Width="61" Height="51" Click="aa" Margin="500,0,0,200" Panel.ZIndex="2" Background="Red" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button x:Name="Nka" Width="61" Height="51" Click="ka" Margin="500,0,0,90" Panel.ZIndex="2" Background="Red" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button x:Name="NSSe" Width="61" Height="51" Click="SSe" Margin="500,50,0,0" Panel.ZIndex="2" Background="Red" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
     </Grid>
 </Window>
