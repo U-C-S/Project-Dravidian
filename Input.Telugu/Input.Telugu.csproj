@@ -4,21 +4,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B84A76D-48F7-4A82-B981-7461A201DB7B}</ProjectGuid>
+    <ProjectGuid>{6907F634-3085-4204-9839-820BDE50167D}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Telugu</RootNamespace>
-    <AssemblyName>Telugu</AssemblyName>
+    <RootNamespace>Input.Telugu</RootNamespace>
+    <AssemblyName>Input-Telugu</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Build\</OutputPath>
+    <OutputPath>..\_Release\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeluguKeys.cs" />
+    <Compile Include="Unicode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

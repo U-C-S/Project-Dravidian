@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Telugu_Prototype_Typing_Keyboard
+namespace dravidianInput
 {
     /// <summary>
     /// Interaction logic for App.xaml

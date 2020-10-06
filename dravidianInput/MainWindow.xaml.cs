@@ -12,9 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Telugu;
 
-namespace Telugu_Prototype_Typing_Keyboard
+namespace dravidianInput
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,9 +23,9 @@ namespace Telugu_Prototype_Typing_Keyboard
         public MainWindow()
         {
             InitializeComponent();
-            Na.Content = TeluguKeys.ah;
-            Nka.Content = TeluguKeys.ka;
-            NSSe.Content = TeluguKeys._e;
+            Na.Content = Input.Telugu.Unicode.ah;
+            Nka.Content = Input.Telugu.Unicode.ka;
+            NSSe.Content = Input.Telugu.Unicode._e;
         }
         private void Keyboard_press(object sender, KeyEventArgs e)
         {
@@ -34,11 +33,11 @@ namespace Telugu_Prototype_Typing_Keyboard
             {
                 output.Text += "\u0C15";
             }
-            else if(e.Key == Key.B)
+            else if (e.Key == Key.B)
             {
                 output.Text += "\u0C3F";
             }
-            else if(e.Key == Key.S)
+            else if (e.Key == Key.S)
             {
                 output.Text += "\u0C2A\u0C4D\u0C30";
             }
@@ -51,17 +50,17 @@ namespace Telugu_Prototype_Typing_Keyboard
 
         private void aa(object sender, RoutedEventArgs e)
         {
-            output.Text += TeluguKeys.ah;
+            output.Text += Input.Telugu.Unicode.ah;
         }
 
         private void ka(object sender, RoutedEventArgs e)
         {
-            output.Text += TeluguKeys.ka;
+            output.Text += Input.Telugu.Unicode.ka;
         }
 
         private void SSe(object sender, RoutedEventArgs e)
         {
-            output.Text += TeluguKeys._e;
+            output.Text += Input.Telugu.Unicode._e;
         }
     }
 }

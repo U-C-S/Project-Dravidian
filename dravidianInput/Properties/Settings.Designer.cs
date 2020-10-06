@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Telugu_Prototype_Typing_Keyboard.Properties
+namespace dravidianInput.Properties
 {
 
 

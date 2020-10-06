@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Telugu_Prototype_Typing_Keyboard.Properties
+namespace dravidianInput.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace Telugu_Prototype_Typing_Keyboard.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Telugu_Prototype_Typing_Keyboard.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("dravidianInput.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

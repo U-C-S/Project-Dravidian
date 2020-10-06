@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Telugu
+namespace Input.Telugu
 {
-    public class TeluguKeys
+    public class Unicode
     {
+        public string Lang = "telugu";
+
         public const string _sound = "\u0C4D";
 
         public const string ah = "\u0C05";
