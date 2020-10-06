@@ -25,10 +25,6 @@ namespace dravidianInput
         {
             InitializeComponent();
             Renderr();
-
-            Na.Content = Unicode.cons[1];
-            Nka.Content = Unicode.ka;
-            NSSe.Content = Unicode._e;
         }
 
         public void Renderr()
@@ -37,19 +33,62 @@ namespace dravidianInput
             {
                 Button consbtn = new Button
                 {
-                    Content = Unicode.cons[i],
+                    Content = Unicode.vowels[i],
                     Width = 40,
-                    Tag = $"conbtn{i}"
+                    FontSize = 18,
+                    FontFamily = new FontFamily("NTR")
                 };
                 consbtn.Click += new RoutedEventHandler(consClick);
-                Grid1.Children.Add(consbtn);
+                Grid0.Children.Add(consbtn);
+            }
+            StackPanel[] grids = { Grid1, Grid2, Grid3, Grid4, Grid5 };
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Button consbtn = new Button
+                    {
+                        Content = Unicode.consonats[i,j],
+                        Width = 40,
+                        FontSize = 18,
+                        FontFamily = new FontFamily("NTR")
+                    };
+                    consbtn.Click += new RoutedEventHandler(consClick);
+                    grids[i].Children.Add(consbtn);
+                }
+            }
+            for (int i = 0; i < 11; i++)
+            {
+                Button consbtn = new Button
+                {
+                    Content = Unicode.consonats2[i],
+                    Width = 40,
+                    FontSize = 18,
+                    FontFamily = new FontFamily("NTR")
+                };
+                consbtn.Click += new RoutedEventHandler(consClick);
+                Grid6.Children.Add(consbtn);
             }
         }
+
         private void consClick(object sender, RoutedEventArgs e)
         {
             output.Text += (sender as Button).Content;
         }
 
+        private void TextboxFontChange(object sender, SelectionChangedEventArgs e)
+        {
+            if (TextFontCombox.SelectedIndex == 0)
+                output.FontFamily = new FontFamily("Segoe UI");
+            if (TextFontCombox.SelectedIndex == 1)
+                output.FontFamily = new FontFamily("Gautami");
+            if (TextFontCombox.SelectedIndex == 2)
+                output.FontFamily = new FontFamily("NTR");
+            if (TextFontCombox.SelectedIndex == 3)
+                output.FontFamily = new FontFamily("Vani");
+        }
+
+        /*
         private void Keyboard_press(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.A)
@@ -65,37 +104,7 @@ namespace dravidianInput
                 output.Text += "\u0C2A\u0C4D\u0C30";
             }
         }
-        private void textbox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.T)
-                output.Text += "\u0C15";
-        }
+        */
 
-        private void aa(object sender, RoutedEventArgs e)
-        {
-            output.Text += Input.Telugu.Unicode.ah;
-        }
-
-        private void ka(object sender, RoutedEventArgs e)
-        {
-            output.Text += Input.Telugu.Unicode.ka;
-        }
-
-        private void SSe(object sender, RoutedEventArgs e)
-        {
-            output.Text += Input.Telugu.Unicode._e;
-        }
-
-        private void TextboxFontChange(object sender, SelectionChangedEventArgs e)
-        {
-            if (TextFontCombox.SelectedIndex == 0)
-                output.FontFamily = new FontFamily("Segoe UI");
-            if (TextFontCombox.SelectedIndex == 1)
-                output.FontFamily = new FontFamily("Gautami");
-            if (TextFontCombox.SelectedIndex == 2)
-                output.FontFamily = new FontFamily("NTR");
-            if (TextFontCombox.SelectedIndex == 3)
-                output.FontFamily = new FontFamily("Vani");
-        }
     }
 }
