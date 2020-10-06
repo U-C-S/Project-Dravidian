@@ -26,6 +26,7 @@ namespace Input.Telugu
         public const string o = "\u0C12";
         public const string oo = "\u0C13";
         public const string ow = "\u0C14";
+        public static string[] cons = new string[14] { ah, aah, e, ee, vu, vuu, ru, ruu, a, aa, i, o, oo, ow };
 
         public const string _aah = "\u0C3E";
         public const string _e = "\u0C3F";
@@ -82,5 +83,6 @@ namespace Input.Telugu
         public const string sha = "\u0C37";
         public const string sa = "\u0C38";
         public const string ha = "\u0C39";
+
     }
 }

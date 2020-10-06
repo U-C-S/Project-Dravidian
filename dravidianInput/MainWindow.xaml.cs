@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Input.Telugu;
 
 namespace dravidianInput
 {
@@ -23,15 +24,37 @@ namespace dravidianInput
         public MainWindow()
         {
             InitializeComponent();
-            Na.Content = Input.Telugu.Unicode.ah;
-            Nka.Content = Input.Telugu.Unicode.ka;
-            NSSe.Content = Input.Telugu.Unicode._e;
+            Renderr();
+
+            Na.Content = Unicode.cons[1];
+            Nka.Content = Unicode.ka;
+            NSSe.Content = Unicode._e;
         }
+
+        public void Renderr()
+        {
+            for (int i = 0; i <= 13; i++)
+            {
+                Button consbtn = new Button
+                {
+                    Content = Unicode.cons[i],
+                    Width = 40,
+                    Tag = $"conbtn{i}"
+                };
+                consbtn.Click += new RoutedEventHandler(consClick);
+                Grid1.Children.Add(consbtn);
+            }
+        }
+        private void consClick(object sender, RoutedEventArgs e)
+        {
+            output.Text += (sender as Button).Content;
+        }
+
         private void Keyboard_press(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.A)
             {
-                output.Text += "\u0C15";
+                output.Text += Unicode.ka;
             }
             else if (e.Key == Key.B)
             {
