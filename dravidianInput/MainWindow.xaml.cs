@@ -69,10 +69,8 @@ namespace dravidianInput
             grid.Children.Add(UnicodeBtn);
         }
 
-        private void CharacterClick(object sender, RoutedEventArgs e)
-        {
-            output.Text += (sender as Button).Content;
-        }
+        private void CharacterClick(object sender, RoutedEventArgs e) => output.Text += (sender as Button).Content;
+        private void CopytoClip(object sender, RoutedEventArgs e) => Clipboard.SetText(output.Text);
 
         private void TextboxFontChange(object sender, SelectionChangedEventArgs e)
         {
@@ -85,24 +83,6 @@ namespace dravidianInput
             if (TextFontCombox.SelectedIndex == 3)
                 output.FontFamily = new FontFamily("Vani");
         }
-
-        /*
-        private void Keyboard_press(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.A)
-            {
-                output.Text += Unicode.ka;
-            }
-            else if (e.Key == Key.B)
-            {
-                output.Text += "\u0C3F";
-            }
-            else if (e.Key == Key.S)
-            {
-                output.Text += "\u0C2A\u0C4D\u0C30";
-            }
-        }
-        */
 
     }
 }

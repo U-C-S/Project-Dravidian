@@ -47,5 +47,6 @@
             <StackPanel x:Name="Grid7" Grid.Row="7" Grid.Column="1" Orientation="Horizontal" Grid.ColumnSpan="2"/>
             <StackPanel x:Name="Grid8" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3"/>
         </Grid>
+        <Button Content="Copy" HorizontalAlignment="Center" Margin="625,20,0,0" VerticalAlignment="Top" Width="40" Background="#FFB6D025" Height="40" ToolTip="Copy the Text to your Clipboard" Click="CopytoClip"/>
     </Grid>
 </Window>
