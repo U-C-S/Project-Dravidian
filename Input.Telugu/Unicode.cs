@@ -41,6 +41,9 @@ namespace Input.Telugu
         public const string _oo = "\u0C4B";
         public const string _ow = "\u0C4C";
 
+        public const string _um = "\u0C02";
+        public const string _aha = "\u0C03";
+
         public const string ka = "\u0C15";
         public const string kaa = "\u0C16";
         public const string ga = "\u0C17";
@@ -76,13 +79,14 @@ namespace Input.Telugu
         public const string bra = "\u0C31";
         public const string la = "\u0C32";
         public const string lla = "\u0C33";
-        public const string xx = "\u0C34";
         public const string va = "\u0C35";
         public const string say = "\u0C36";
         public const string sha = "\u0C37";
         public const string sa = "\u0C38";
         public const string ha = "\u0C39";
 
+        public static string[] vowel_sound = new string[14] { _sound, _aah, _e, _ee, _vu, _vuu, _ru, _ruu, _a, _aa, _i, _o, _oo, _ow };
+        public static string[] vowel_sound2 = new string[2] { _um, _aha };
         public static string[] vowels = new string[14] { ah, aah, e, ee, vu, vuu, ru, ruu, a, aa, i, o, oo, ow };
         public static string[,] consonats = new string[5, 5] {
             { ka, kaa, ga, gaa, ini },
@@ -91,6 +95,6 @@ namespace Input.Telugu
             { tha, thaa, dha, dhaa, na },
             { pa, paa, ba, baa, ma } 
         };
-        public static string[] consonats2 = new string[11] { ya, ra, bra, la, lla, xx, va, say, sha, sa, ha };
+        public static string[] consonats2 = new string[10] { ya, ra, la, va, say, sha, sa, ha, lla, bra };
     }
 }
