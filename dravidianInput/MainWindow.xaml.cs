@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,40 +25,73 @@ namespace dravidianInput
         public MainWindow()
         {
             InitializeComponent();
-            Renderr();
+            KeyboardRender();
         }
 
-        public void Renderr()
+        public void KeyboardRender()
         {
-            for (int i = 0; i < Unicode.vowel_sound.Length; i++) ButtonRenderer(Unicode.vowel_sound[i], "Vani", Grid0);
-            for (int i = 0; i < Unicode.vowel_sound2.Length; i++) ButtonRenderer(Unicode.vowel_sound2[i], "Vani", Grid8);
-            for (int i = 0; i < Unicode.vowels.Length; i++) ButtonRenderer(Unicode.vowels[i], "NTR", Grid1);
-            for (int i = 0; i < Unicode.consonats2.Length; i++) ButtonRenderer(Unicode.consonats2[i], "NTR", Grid7);
+            for (int i = 0; i < Unicode.vowel_sound.Length; i++) BtnRenderer(Unicode.vowel_sound[i], "Vani", Grid0, "s");
+            for (int i = 0; i < Unicode.vowel_sound2.Length; i++) BtnRenderer(Unicode.vowel_sound2[i], "Vani", Grid8, "s");
+            for (int i = 0; i < Unicode.vowels.Length; i++) BtnRenderer(Unicode.vowels[i], "NTR", Grid1, "v");
+            for (int i = 0; i < Unicode.consonats2.Length; i++) BtnRenderer(Unicode.consonats2[i], "NTR", Grid7, "c");
             
             StackPanel[] grids = { Grid2, Grid3, Grid4, Grid5, Grid6 };
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    ButtonRenderer(Unicode.consonats[i,j], "NTR", grids[i]);
+                    BtnRenderer(Unicode.consonats[i, j], "NTR", grids[i], "c");
                 }
             }
         }
 
-        private void ButtonRenderer(string content, string fontFamily, StackPanel grid)
+        private void BtnRenderer(string content, string fontFamily, StackPanel grid, string tag)
         {
             Button UnicodeBtn = new Button
             {
                 Content = content,
+                Cursor = Cursors.Hand,
                 Width = 45,
                 FontSize = 18,
-                FontFamily = new FontFamily(fontFamily)
+                FontFamily = new FontFamily(fontFamily),
+                Tag = tag
             };
             UnicodeBtn.Click += new RoutedEventHandler(CharacterClick);
             grid.Children.Add(UnicodeBtn);
         }
 
-        private void CharacterClick(object sender, RoutedEventArgs e) => output.Text += (sender as Button).Content;
+        string previousUnicode = "x";
+        private void CharacterClick(object sender, RoutedEventArgs e)
+        {
+            Button pressedBtn = (sender as Button);
+            string tag = (string)pressedBtn.Tag;
+            if(tag == "s")
+            {
+                if(previousUnicode == "x" || previousUnicode == "s")
+                {
+
+                }
+                else
+                {
+                    output.Text += pressedBtn.Content;
+                    previousUnicode = tag;
+                }
+            }
+            else if(tag == "v")
+            {
+                if(previousUnicode == "x")
+                {
+                    output.Text += pressedBtn.Content;
+                    previousUnicode = tag;
+                }
+            }
+            else if(tag == "c")
+            {
+                output.Text += pressedBtn.Content;
+                previousUnicode = tag;
+            }
+        }
+
         private void CopytoClip(object sender, RoutedEventArgs e) => Clipboard.SetText(output.Text);
 
         private void TextboxFontChange(object sender, SelectionChangedEventArgs e)
@@ -72,5 +106,16 @@ namespace dravidianInput
                 output.FontFamily = new FontFamily("Vani");
         }
 
+        private void Backspace_Click(object sender, RoutedEventArgs e)
+        {
+            if(output.Text.Length != 0)
+            output.Text = output.Text.Substring(0, output.Text.Length - 1);
+        }
+
+        private void Space_Click(object sender, RoutedEventArgs e)
+        {
+            output.Text += (sender as Button).Content;
+            previousUnicode = "x";
+        }
     }
 }
