@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:dravidianInput"
         mc:Ignorable="d" Title="Dravidian"
         Height="540" Width="780" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo Description="Dravidian Working in the Background"/>
+    </Window.TaskbarItemInfo>
     <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
         <ScrollViewer VerticalScrollBarVisibility="Disabled">
             <TextBox Name="output" Width="460" Height="120" Margin="0,20,0,0" FontSize="18" TextWrapping="Wrap" AcceptsReturn="True"

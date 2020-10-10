@@ -29,17 +29,17 @@ namespace dravidianInput
 
         public void KeyboardRender()
         {
-            for (int i = 0; i < Unicode.vowel_sound.Length; i++) BtnRenderer(Unicode.vowel_sound[i], "Vani", Grid0, "s");
-            for (int i = 0; i < Unicode.vowel_sound2.Length; i++) BtnRenderer(Unicode.vowel_sound2[i], "Vani", Grid8, "s");
-            for (int i = 0; i < Unicode.vowels.Length; i++) BtnRenderer(Unicode.vowels[i], "NTR", Grid1, "v");
-            for (int i = 0; i < Unicode.consonats2.Length; i++) BtnRenderer(Unicode.consonats2[i], "NTR", Grid7, "c");
+            for (int i = 0; i < TeluguUnicode.vowel_sound.Length; i++) BtnRenderer(TeluguUnicode.vowel_sound[i], "Vani", Grid0, "s");
+            for (int i = 0; i < TeluguUnicode.vowel_sound2.Length; i++) BtnRenderer(TeluguUnicode.vowel_sound2[i], "Vani", Grid8, "s");
+            for (int i = 0; i < TeluguUnicode.vowels.Length; i++) BtnRenderer(TeluguUnicode.vowels[i], "NTR", Grid1, "v");
+            for (int i = 0; i < TeluguUnicode.consonats2.Length; i++) BtnRenderer(TeluguUnicode.consonats2[i], "NTR", Grid7, "c");
             
             StackPanel[] grids = { Grid2, Grid3, Grid4, Grid5, Grid6 };
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    BtnRenderer(Unicode.consonats[i, j], "NTR", grids[i], "c");
+                    BtnRenderer(TeluguUnicode.consonats[i, j], "NTR", grids[i], "c");
                 }
             }
         }
@@ -118,7 +118,7 @@ namespace dravidianInput
         }
     }
 
-    public class Unicode
+    public class TeluguUnicode
     {
         public string Lang = "telugu";
 
