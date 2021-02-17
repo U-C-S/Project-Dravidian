@@ -125,5 +125,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\std_mappings\std_mappings.csproj">
+      <Project>{695e0ffa-1f6b-4a30-b8ef-f0d8d5e8baa5}</Project>
+      <Name>std_mappings</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

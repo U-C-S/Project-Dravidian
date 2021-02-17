@@ -5,54 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dravidianInput"
         mc:Ignorable="d" Title="Dravidian"
-        Height="540" Width="780" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Height="540" Width="780" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" WindowStyle="None">
     <Window.TaskbarItemInfo>
         <TaskbarItemInfo Description="Dravidian Working in the Background"/>
     </Window.TaskbarItemInfo>
     <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
-        <ScrollViewer VerticalScrollBarVisibility="Disabled">
-            <TextBox Name="output" Width="460" Height="120" Margin="0,20,0,0" FontSize="18" TextWrapping="Wrap" AcceptsReturn="True"
-                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" 
-                     VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        </ScrollViewer>
-        <ComboBox x:Name="TextFontCombox" Margin="20,20,0,0" Width="75" VerticalAlignment="Top" HorizontalAlignment="Left" SelectionChanged="TextboxFontChange" SelectedIndex="2">
-            <ComboBoxItem Content="Default"/>
-            <ComboBoxItem Content="Gautami"/>
-            <ComboBoxItem Content="NTR"/>
-            <ComboBoxItem Content="Vani"/>
-        </ComboBox>
-
-        <Grid x:Name="btnGrid" Width="630" Height="320" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,20" Background="Black">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="90"/>
-                <ColumnDefinition Width="90"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="45"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-
-            <StackPanel x:Name="Grid0" Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="4"/>
-            <StackPanel x:Name="Grid1" Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="4"/>
-            <StackPanel x:Name="Grid2" Grid.Row="2" Orientation="Horizontal" Grid.Column="2"/>
-            <StackPanel x:Name="Grid3" Grid.Row="3" Orientation="Horizontal" Grid.Column="2"/>
-            <StackPanel x:Name="Grid4" Grid.Row="4" Orientation="Horizontal" Grid.Column="2"/>
-            <StackPanel x:Name="Grid5" Grid.Row="5" Orientation="Horizontal" Grid.Column="2"/>
-            <StackPanel x:Name="Grid6" Grid.Row="6" Orientation="Horizontal" Grid.Column="2" />
-            <StackPanel x:Name="Grid7" Grid.Row="7" Grid.Column="1" Orientation="Horizontal" Grid.ColumnSpan="2"/>
-            <StackPanel x:Name="Grid8" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3"/>
-            <Button Grid.Row="3" Content=" " ToolTip="Space" Click="Space_Click" Cursor="Hand"/>
-        </Grid>
-
-        <Button Content="Copy" HorizontalAlignment="Center" Margin="625,20,0,0" VerticalAlignment="Top" Width="40" Background="#FFB6D025" Height="40" ToolTip="Copy the Text to your Clipboard" Click="CopytoClip"/>
-        <Button x:Name="Backspace" Content="--" Margin="514,120,0,0" VerticalAlignment="Top" Width="55" Click="Backspace_Click" ToolTip="Backspace"/>
+        
     </Grid>
 </Window>
